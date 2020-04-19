@@ -33,12 +33,16 @@ body{
 
 }
 .format{
-    margin: auto;
+    margin: auto !important;
+    text-align: center;
 }
 
 input{
-    padding: 2%;
+    padding: 1%;
     font-size: 110%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 

@@ -31,7 +31,7 @@ const searchValue = document.querySelector('input')
 const messageOne = document.querySelector('#messageOne')
 const messageTwo = document.querySelector('#messageTwo')
 
-messageOne.textContent = 'From JavaScript'
+messageOne.textContent = 'Your Forecast will appear here...'
 
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()

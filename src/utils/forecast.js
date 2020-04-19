@@ -32,7 +32,7 @@ const forecast = (long, lat, callback)=>{
                   time,
                   localtime,
                   timeZoneId,
-                  w_degree, w_speed, w_direction, humidity, cloud_cover, day, visibility
+                  w_degree, w_speed, w_direction, humidity, cloud_cover, day, visibility, currently
             }
             )
         }

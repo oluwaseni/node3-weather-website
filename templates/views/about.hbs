@@ -8,12 +8,19 @@
 <body>
     <div class="all-content">
     {{>header}}
-    <div>{{title}}</div>
-    <p>This app was created for fun by Ajibade, O. Emmanuel. <br>
-    The app runs using data from mapbox and weatherstack's API
+    
+    <div class="about">
+        <div>{{title}}</div>
+    <p>
+    This app helps report the weather forecast of the location that was entered.
+    Returns real-time data.
+     Search all location for your forcast. <br>
+        This app was created for fun by Ajibade, O. Emmanuel. <br>
     </p>
-    <img src="/images/32.jpg" alt="">
-    <p>My Fact: {{name}} </p>
+    <img src="/images/mine.jpg" alt=""> <br>
+    <span>My Picture is here for the fun.</span>
+    </div>
+    {{!-- <p>My Fact: {{name}} </p> --}}
     </div>
     {{>footer}}
 

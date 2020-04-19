@@ -22,34 +22,33 @@ app.use(express.static(filePath))
 
 app.get('', (req, res)=>{
     res.render('index',{
-        title: "Weather Forecast",
-        name:'Emmanuel Oluwaseni'
+        title: "Forecast",
+        name:'Oluwaseni: 08185184003'
     })
 })
 
 app.get('/index', (req, res)=>{
     res.render('index',{
-        title: "Weather Forecast",
-        name:'Emmanuel Oluwaseni'
+        title: "Forecast",
+        name:'Oluwaseni: 08185184003'
     })
 })
 app.get('/about', (req, res)=>{
     res.render('about',{
         title: "About the App",
+        name:'Oluwaseni: 08185184003'
     })
 })
 app.get('/help', (req, res)=>{
     res.render('help',{
         title: "FAQ",
-        message:'Don\'t try me ',
-        name:'Emmanuel Oluwaseni'
+        message:'We all need God\s help! ',
+        name:'Oluwaseni: 08185184003'
     })
 })
 
 
-app.get('/about', (req, res)=>{
-    res.send('<h2>This is page ABOUT</h2>')
-})
+
 app.get('/weather', (req, res)=>{
     address = req.query.address
     if(!req.query.address){
@@ -86,6 +85,7 @@ app.get('/weather', (req, res)=>{
                 humidity:forecastData.humidity,
                 cloud_cover:forecastData.cloud_cover,
                 day:forecastData.day,
+                currently:forecastData.currently,
                 visibility:forecastData.visibility,
                 latitude:latitude,
                 longitude:longitude,
@@ -115,7 +115,7 @@ app.get('/help/*', (req,res)=>{
     res.render('404',{
         message: 'page not found',
         title: 'Help Not found',
-        name:'Emmanuel Oluwaseni'
+        name:'Oluwaseni: 08185184003'
     })
 
 })
@@ -124,7 +124,7 @@ app.get('*', (req, res)=>{
     res.render('404',{
         title: 'None found',
         message:'page not found',
-        name:'Emmanuel Oluwaseni'
+        name:'Oluwaseni: 08185184003'
     })
 })
 

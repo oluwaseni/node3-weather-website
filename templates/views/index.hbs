@@ -1,41 +1,99 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/css/style.css">
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="/css/style.css">
+    {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
+    {{!-- <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
+    {{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> --}}
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="all-content">
-        {{>header}}
+    <script src="https://kit.fontawesome.com/f024d0947f.js"></script>
+    <div class="weather-content">
+        <div class="all-content">
+
+            {{>header}}
 
 
-        <div class="format">
-            <div>{{title}}</div>
-            <form>
-                <input type="text" placeholder="Location">
-                <button class="but">Search</button>
+            <div class="format">
+                <div>{{title}}</div>
+                <form>
+                    <input type="text" placeholder="Location">
+                    <button class="but btn btn-success">Search</button>
 
-            </form>
+                </form>
 
-        </div>
-        <div id="box1" class="box">
-            <div class="box-inner">
-            <span id="lat"></span><span id="long"></span>
-            <label>Location: </label><p id="messageOne"></p>
-            <label>Location: </label><p id="messageTwo"></p>
+            </div>
+            <div id="box1" class="box">
+                <div class="box-inner">
+                    <b>Long/Lat: <span id="lat"></span><span id="long"></span></b>
+                    <img src="" alt="" id="src">
+                    <span id="temp" style="font-size: 300%; font-weight: bold; float: right; right-margin: 15% !important;"></span>
+                    <br>
+                    <label><b>Location: </b></label>
+                    <p id="messageOne"></p>
+                    <label><b>Forecast: </b></label>
+                    <p id="messageTwo"></p>
+                </div>
+            </div>
+            <div id="box2" class="box">
+                <div class="box-inner">
+
+                    <div class="others">
+                        <span class="left"> Humidity</span>
+                        <span class="right" id="humidity"></span>
+                    </div>
+                    <hr>
+                    <div class="others">
+                        <span class="left"> Wind degree</span>
+                        <span class="right" id="w_degree"></span>
+                    </div>
+                    <hr>
+                    <div class="others">
+                        <span class="left"> Wind Speed</span>
+                        <span class="right" id="w_speed"></span>
+                    </div>
+                    <hr>
+                    <div class="others">
+                        <span class="left"> Day</span>
+                        <span class="right" id="day"></span>
+                    </div>
+                    <hr>
+                    <div class="others">
+                        <span class="left"> Visibility</span>
+                        <span class="right" id="visibility"></span>
+                    </div>
+                    <hr>
+                    <div class="other">
+                        <span> Local time:</span> <br>
+                        <span class="bold" id="localTime"></span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="box2" class="box">
-
-        </div>
     </div>
-    {{>footer}}
 
+        {{>footer}}
 </body>
 
 <script src="/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </html>

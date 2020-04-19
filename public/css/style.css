@@ -5,11 +5,45 @@ body{
     max-width: 650px;
     margin: 0 auto;
     padding: 0 auto;
-    padding-left: 5%;
+    /* padding-left: 5%; */
+   
+    /* background-image: url('/images/download.jfif'); */
+    background-size: cover;
+    background-repeat: no-repeat;
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.weather-content{
+    background-color: #ffffff;
+    opacity: 0.9;
+    flex-grow: 1;
+}
+
+
+.right{
+    float: right;
+    margin-right: 5%;
+}
+
+#src{
+    display: none;
+    width: 15%;
+    float: right;
+    border-top-right-radius: 15px;
+    /* opacity: 0.7; */
+}
+
+.other{
+    text-align: center;
+}
+
+.bold{
+    font-size: 300%;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 .all-content{
@@ -36,12 +70,24 @@ body{
 }
 
 #box1{
-    
+
+    display: none;
+}
+#box2{
+
     display: none;
 }
 
+#box2 hr{
+    width: 80%;
+}
+
+.others{
+    padding: 3%;
+}
+
 .box{
-    background-color: #f3f0f0;
+    background-color: #f7f2f2;
     border-radius: 15px;
     text-align: left; 
     /* padding:3%; */
@@ -82,15 +128,30 @@ p{
 
 
 img{
-    width: 250px;
+    width: 30%;
+    border-radius: 50px;
+    /* height: 80%; */
+}
+.about{
+    text-align: center;
+    padding: 3%;
+    /* background-color: #f3efef; */
+    border-radius: 15px;
+    line-height: 170%;
 }
 
 footer{
-    color: #888888;
+    color: #888888 !important;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
     text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #888888;
+
 }
 
 header{

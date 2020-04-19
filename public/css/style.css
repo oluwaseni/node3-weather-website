@@ -1,6 +1,7 @@
 body{
     color:#d7757b;
     font-family: Arial, Helvetica, sans-serif;
+    font-style: 90%;
     max-width: 650px;
     margin: 0 auto;
     padding: 0 auto;
@@ -27,10 +28,31 @@ body{
     color: #eeeeee;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding: 2%;
+    padding: 1%;
     font-size: 110%;
     border: none;
+    cursor: pointer;
 
+}
+
+#box1{
+    
+    display: none;
+}
+
+.box{
+    background-color: #f3f0f0;
+    border-radius: 15px;
+    text-align: left; 
+    /* padding:3%; */
+    margin: 3%;
+    height: fit-content;
+    font-size: 80%;
+}
+
+.box-inner{
+    padding: 3%;
+    /* opacity: 0.6; */
 }
 .format{
     margin: auto !important;
@@ -39,14 +61,23 @@ body{
 
 form{
     margin: auto;
+    min-width: 100% !important;
 }
 
 input{
-    /* padding: 1%; */
+    padding: 1%;
     font-size: 110%;
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+hr{
+    color: #888888;
+}
+
+p{
+    color: #888888 !important;
 }
 
 

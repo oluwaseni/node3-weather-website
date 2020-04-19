@@ -35,8 +35,7 @@ app.get('/index', (req, res)=>{
 })
 app.get('/about', (req, res)=>{
     res.render('about',{
-        title: "About Me",
-        name:'I Love Esther'
+        title: "About the App",
     })
 })
 app.get('/help', (req, res)=>{
@@ -73,9 +72,23 @@ app.get('/weather', (req, res)=>{
                 return res.send({
                     error:error})
             }
+
+            
             res.send({
                 location:location,
-                forecast:forecastData,
+                forecast:forecastData.description,
+                icon:forecastData.icons,
+                weatherCode:forecastData.weatherCode,
+                localtime:forecastData.localtime,
+                w_degree:forecastData.w_degree,
+                w_speed:forecastData.w_speed,
+                w_direction:forecastData.w_direction,
+                humidity:forecastData.humidity,
+                cloud_cover:forecastData.cloud_cover,
+                day:forecastData.day,
+                visibility:forecastData.visibility,
+                latitude:latitude,
+                longitude:longitude,
                 address: req.query.address
             })
           })

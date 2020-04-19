@@ -30,8 +30,18 @@ const weatherForm = document.querySelector('form')
 const searchValue = document.querySelector('input')
 const messageOne = document.querySelector('#messageOne')
 const messageTwo = document.querySelector('#messageTwo')
+const long = document.querySelector('#long')
+const lat = document.querySelector('#lat')
+// const box = document.getElementById('box1').style.display="block"
 
-messageOne.textContent = 'Your Forecast will appear here...'
+// icons:icons,
+            // weatherCode,
+            // time,
+            // localtime,
+            // timeZoneId,
+            // w_degree, w_speed, w_direction, humidity, cloud_cover, day, visibility
+
+// messageOne.textContent = '...'
 
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
@@ -42,7 +52,10 @@ weatherForm.addEventListener('submit', (e)=>{
         console.log("error")
     }
     response.json().then((data)=>{
+        document.getElementById('box1').style.display="block"
         console.log(data)
+        lat.textContent = data.latitude+" | "
+        long.textContent = data.longitude
         messageOne.textContent = 'Location: '+data.location
         messageTwo.textContent = 'Forecast: '+ data.forecast
         

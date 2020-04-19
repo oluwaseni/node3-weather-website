@@ -36,7 +36,7 @@ messageOne.textContent = 'From JavaScript'
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
     const valu = searchValue.value
-    fetch('http://localhost:3000/weather?address='+valu).then((response)=>{
+    fetch('/weather?address='+valu).then((response)=>{
 
     if(!response){
         console.log("error")

@@ -22,6 +22,13 @@ body{
     color: #888888;
 }
 
+.but{
+    background-color: #d7757b;
+    color: #eeeeee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 img{
     width: 250px;
 }
@@ -31,10 +38,12 @@ footer{
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
+    text-align: center;
 }
 
 header{
     margin: 16px 0px 48px 0px;
+    text-align: center;
 }
 
 h1{

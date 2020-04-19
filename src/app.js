@@ -22,14 +22,14 @@ app.use(express.static(filePath))
 
 app.get('', (req, res)=>{
     res.render('index',{
-        title: "Weather Application",
+        title: "Weather Forecast",
         name:'Emmanuel Oluwaseni'
     })
 })
 
 app.get('/index', (req, res)=>{
     res.render('index',{
-        title: "Weather Application",
+        title: "Weather Forecast",
         name:'Emmanuel Oluwaseni'
     })
 })

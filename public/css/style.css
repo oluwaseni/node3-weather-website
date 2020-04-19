@@ -27,7 +27,20 @@ body{
     color: #eeeeee;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    padding: 2%;
+    font-size: 110%;
+    border: none;
+
 }
+.format{
+    margin: auto;
+}
+
+input{
+    padding: 2%;
+    font-size: 110%;
+}
+
 
 img{
     width: 250px;
@@ -47,7 +60,7 @@ header{
 }
 
 h1{
-    font-size: 64px;
+    font-size: 50px;
     margin-bottom: 16px;
 }
 

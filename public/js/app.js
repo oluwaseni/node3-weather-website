@@ -72,7 +72,7 @@ weatherForm.addEventListener('submit', (e)=>{
         localTime.textContent= data.localtime
         w_degree.textContent= data.w_degree
         w_speed.textContent= data.w_speed
-        humidity.textContent= data.humidity
+        humidity.textContent= data.humidity+"%"
         day.textContent= data.day
         visibility.textContent= data.visibility
 
